@@ -12,7 +12,6 @@ class MusicImporter
   end
 
   def import
-    binding.pry
     array = files.collect{ |filename| Song.create_from_filename(filename) }
   end
 
