@@ -4,7 +4,7 @@ class MusicImporter
   def initialize(path)
     @path = path
   end
- 
+
   def files
     Dir["#{@path}/*.mp3"].collect do |song_names|
        song_names.gsub(/.*[\/]/, '')
@@ -12,6 +12,7 @@ class MusicImporter
   end
 
   def import
+    binding.pry
     array = files.collect{ |filename| Song.create_from_filename(filename) }
   end
 
