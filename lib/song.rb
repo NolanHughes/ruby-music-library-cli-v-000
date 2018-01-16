@@ -72,6 +72,3 @@ class Song
   end
 
 end
-
-# song = Song.new_from_filename("Thundercat - For Love I Come - dance.mp3")
-# binding.pry
